@@ -85,6 +85,7 @@ body
 	margin-right: 25px;
 	font-size: 15px;
 	bottom: 20px;
+	padding: 10px 0px;
 }
 
 /*-------------top nav E----------*/
@@ -220,6 +221,11 @@ body
 	opacity: 5%;
 	top: 1600px;
 }
+.cont_service a
+{
+	text-decoration: none; 
+	color: #212121;
+}
 .service
 {
 	background-color: #EFEFEF; 
@@ -229,7 +235,7 @@ body
 	transition: all ease-in-out 100ms;
 }
 .ser_contents{padding: 60px;}
-.ser_header{position: absolute; ;letter-spacing: 1px;transition: all ease-in-out 150ms;}
+.ser_header{position: absolute; ;letter-spacing: 0.5px;transition: all ease-in-out 150ms;}
 .ser_para
 {
 	position: absolute;
@@ -520,7 +526,6 @@ body
 	}
 	.resume{display: none;}
 	.scroll_btn{display: none;}
-	.dp{/*width: 100px*/}
 
 	.name{font-size: 15px}
 	.typeWriter{font-size: 15px; margin-top: 0px}
@@ -536,33 +541,39 @@ body
 		transform: translate(-33%,0%);
 		left: 40%;
 	}
+	.socialLink:hover{padding: 10px;}
+	.header1{font-size: 30px;}
 
-	.ser_header{font-size: 12px}
-	.ser_para{font-size: 8px; margin-top: -15px; max-width: 170px;}
+	.ser_header{font-size: 12px; margin-top: 5px;}
+	.ser_para{font-size: 8px; margin-top: -10px; max-width: 170px;}
 	.service{height: 100px}
-	.s{height: 20%;}
 	.right_alg{right: 20px}
 
 	/*-------services S------*/
 
-	#elements_web{top: 22%; right: 160px}
-	#web1,#web2,#web3{width: 140px;}
+	#elements_web{right: 155px; top: 18%}
+	#web1,#web2,#web3{width: 120px;}
+	#web #web1{top: -23px; left: 42px; width: 120px;}
+	#web #web2{opacity: 100%; top: 15px; width: 120px;}
+	#web #web3{display: none;}
+	#web #header_web{font-size: 13px;}
 
-	#web:hover #elements_web{right: 140px; top: 18%}
-	#web:hover #web1{top: -30px; left: 35px; width: 100px;}
-	#web:hover #web2{width: 100px;}
-	#web:hover #web3{top: 30px; left: -35px; width: 100px;}
+	#web:hover #elements_web{right: 155px; top: 18%}
+	#web:hover #web1{top: -23px; left: 42px; width: 120px;}
+	#web:hover #web2{opacity: 100%; top: 15px; width: 120px;}
+	#web:hover #web3{display: none;}
 	#web:hover #header_web{font-size: 13px;}
 
 /*------*/
 
 	#elements_app{top: 12%; left: 50px}
 	
-	#app1{top: 0px; width: 40px; left:0px}
-	#app2{top: 5px; left: 25px; width: 35px; opacity: 100%}
-	#app3{top: 5px; left: -19px; width: 35px; opacity: 100%}
+	#app1{top: -7px; width: 45px; left: -5px}
+	#app2{top: 5px; left: 35px; width: 35px; opacity: 100%}
+	#app3{top: 5px; left: -29px; width: 35px; opacity: 100%}
+	#app #header_app{font-size: 13px;}
 
-	#app:hover #elements_app{left: 50px;}
+	#app:hover #elements_app{top: 12%; left: 50px}
 	#app:hover #app1{width: 45px; top: -7px; left: -5px}
 	#app:hover #app2{opacity: 100%; left: 35px;}
 	#app:hover #app3{opacity: 100%; left: -29px;}
@@ -571,20 +582,22 @@ body
 /*------*/
 
 	#elements_dev{top: 2%;	right: 120px;}
-	#dev1	{	width: 100px	}
+	#dev1	{width: 100px}
+	#dev #header_dev{font-size: 13px;}
 
-	#dev:hover #elements_dev{right: 140px; top: -4%}
-	#dev:hover #dev1{width: 110px;}
+	#dev:hover #elements_dev{top: 2%;	right: 120px;}
+	#dev:hover #dev1{width: 100px;}
 	#dev:hover #header_dev{font-size: 13px;}
 
 /*------*/
 
-	#elements_logo	{	top: 12%; left: 60px	}
-	#logo1,#logo2,#logo3,#logo4	{	width: 70px;	}
-	#logo1{top: -10px}
-	#logo2{top: 0px; left: -20px}
-	#logo3{top: 0px; left: 20px}
-	#logo4{top: 10px;}
+	#elements_logo	{left: 14%; top:16% }
+	#logo1,#logo2,#logo3,#logo4	{	width: 50px;	}
+	#logo1{ top: -20px;}
+	#logo2{ left: -28px; top: 8px}
+	#logo3{ left: 28px; top: 8px}
+	#logo4{top: 37px;}
+	#logo #header_logo{font-size: 13px;}
 
 	#logo:hover #elements_logo{left: 14%; top:16% }
 	#logo:hover #logo1{width: 50px; top: -20px;}
@@ -595,36 +608,33 @@ body
 
 /*------*/
 
-	#elements_pic{top: 22%; right: 160px}
-	#pic1,#pic2,#pic3{width: 140px;}
+	#elements_pic{right: 155px; top: 18%}
+	#pic1,#pic2,#pic3{width: 120px;}
+	#pic1{top: -23px; left: 42px; width: 120px;}
+	#pic2{opacity: 100%; top: 15px; width: 120px;}
+	#pic3{display: none;}
+	#header_pic{font-size: 13px;}
 
-	#pic:hover #elements_pic{right: 140px; top: 18%}
-	#pic:hover #pic1{top: -30px; left: 35px; width: 100px;}
-	#pic:hover #pic2{width: 100px;}
-	#pic:hover #pic3{top: 30px; left: -35px; width: 100px;}
+	#pic:hover #elements_pic{right: 155px; top: 18%}
+	#pic:hover #pic1{top: -23px; left: 42px; width: 120px;}
+	#pic:hover #pic2{opacity: 100%; top: 15px; width: 120px;}
+	#pic:hover #pic3{display: none;}
 	#pic:hover #header_pic{font-size: 13px;}
 
 /*------*/
 
-	#elements_ani{	top: 17%; left: 30px;	}
-	#ani1,#ani2	{	width: 100px;	}
-	#ani1{top: 10px; left: 10px}
-	#ani2{top: 0px; left: 0px}
+	#elements_ani{top: 10%; left: -1%}
+	#ani1	{width: 110px; top: 20px; left: 40px;}
+	#ani2	{width: 110px; top: 0px; left: 20px}
+	#header_ani{font-size: 13px;}
+	#ani1,#ani2{transform: rotate(0deg);}
 
-	#ani:hover #elements_ani{top: 10%; left: 3%}
-	#ani:hover #ani1
-	{
-		width: 110px;
-		top: 20px;
-		left: 40px;
-	}
-	#ani:hover #ani2
-	{
-		width: 110px;
-		top: 0px;
-		left: 0px;
-	}
-	#ani:hover #header_ani{font-size: 13px;}
+	#ani:hover #elements_ani{top: 10%; left: -1%}
+	#ani:hover #ani1 {width: 110px; top: 20px; left: 40px;}
+	#ani:hover #ani2 {width: 110px; top: 0px; left: 20px}
+	#ani:hover #header_ani {font-size: 13px;}
+	#ani:hover #ani1 {transform: rotate(0deg);}
+	#ani:hover #ani2 {transform: rotate(0deg);}
 	/*-------services S------*/
 
 	/*-------Footer S------*/
