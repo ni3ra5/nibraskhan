@@ -43,13 +43,6 @@ body
 	/*margin-left: 50%;*/
 	/*transform: translate(-50%);*/
 }
-#logoHover
-{
-	display: none;
-	filter: brightness(1.1);
-}
-#logoBlock:hover ~ #logoHover {display: block;}
-#logoHover:hover {display: block;}
 
 .navTab
 {
@@ -450,7 +443,7 @@ body
 	margin-left: 15px;
 	margin-right: 15px;
 }
-.rightsRes
+.rightsReserved
 {
 	margin-top: 20px;
 	font-weight: 400;
@@ -499,4 +492,127 @@ body
 	#pic:hover #header_pic{font-size: 25px;}
 	#ani:hover #header_ani{font-size: 25px;}
 }
+@media (max-width: 700px)
+{
+	.logo{width: 55px; margin: 0px 15px;}
+	.navTab{font-size: 12px; margin: 0px 15px;}
 
+	.name{font-size: 15px}
+	.typeWriter{font-size: 15px; margin-top: 0px}
+	.ser_contents{padding: 20px}
+	.resume{font-size: 14px; right: -38px}
+
+	.ser_header{font-size: 12px}
+	.ser_para{font-size: 8px; margin-top: -15px; max-width: 170px;}
+	.service{height: 100px}
+	.s{height: 20%;}
+	.right_alg{right: 20px}
+
+	/*-------services S------*/
+
+	#elements_web{top: 22%; right: 160px}
+	#web1,#web2,#web3{width: 140px;}
+
+	#web:hover #elements_web{right: 140px; top: 18%}
+	#web:hover #web1{top: -30px; left: 35px; width: 100px;}
+	#web:hover #web2{width: 100px;}
+	#web:hover #web3{top: 30px; left: -35px; width: 100px;}
+	#web:hover #header_web{font-size: 13px;}
+
+/*------*/
+
+	#elements_app{top: 12%; left: 50px}
+	
+	#app1{top: 0px; width: 40px; left:0px}
+	#app2{top: 5px; left: 25px; width: 35px; opacity: 100%}
+	#app3{top: 5px; left: -19px; width: 35px; opacity: 100%}
+
+	#app:hover #elements_app{left: 50px;}
+	#app:hover #app1{width: 45px; top: -7px; left: -5px}
+	#app:hover #app2{opacity: 100%; left: 35px;}
+	#app:hover #app3{opacity: 100%; left: -29px;}
+	#app:hover #header_app{font-size: 13px;}
+
+/*------*/
+
+	#elements_dev{top: 2%;	right: 120px;}
+	#dev1	{	width: 100px	}
+
+	#dev:hover #elements_dev{right: 140px; top: -4%}
+	#dev:hover #dev1{width: 110px;}
+	#dev:hover #header_dev{font-size: 13px;}
+
+/*------*/
+
+	#elements_logo	{	top: 12%; left: 60px	}
+	#logo1,#logo2,#logo3,#logo4	{	width: 70px;	}
+	#logo1{top: -10px}
+	#logo2{top: 0px; left: -20px}
+	#logo3{top: 0px; left: 20px}
+	#logo4{top: 10px;}
+
+	#logo:hover #elements_logo{left: 14%; top:16% }
+	#logo:hover #logo1{width: 50px; top: -20px;}
+	#logo:hover #logo2{width: 50px; left: -28px; top: 8px}
+	#logo:hover #logo3{width: 50px; left: 28px; top: 8px}
+	#logo:hover #logo4{width: 50px; top: 37px;}
+	#logo:hover #header_logo{font-size: 13px;}
+
+/*------*/
+
+	#elements_pic{top: 22%; right: 160px}
+	#pic1,#pic2,#pic3{width: 140px;}
+
+	#pic:hover #elements_pic{right: 140px; top: 18%}
+	#pic:hover #pic1{top: -30px; left: 35px; width: 100px;}
+	#pic:hover #pic2{width: 100px;}
+	#pic:hover #pic3{top: 30px; left: -35px; width: 100px;}
+	#pic:hover #header_pic{font-size: 13px;}
+
+/*------*/
+
+	#elements_ani{	top: 17%; left: 30px;	}
+	#ani1,#ani2	{	width: 100px;	}
+	#ani1{top: 10px; left: 10px}
+	#ani2{top: 0px; left: 0px}
+
+	#ani:hover #elements_ani{top: 10%; left: 3%}
+	#ani:hover #ani1
+	{
+		width: 110px;
+		top: 20px;
+		left: 40px;
+	}
+	#ani:hover #ani2
+	{
+		width: 110px;
+		top: 0px;
+		left: 0px;
+	}
+	#ani:hover #header_ani{font-size: 13px;}
+	/*-------services S------*/
+
+	/*-------Footer S------*/
+
+	.f_link
+	{
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		color: #A9A9A9;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.cont_f_links
+	{
+		margin-top: 10px;
+	}
+	.cont_f_social
+	{
+		margin-top: 40px;
+	}
+
+}
