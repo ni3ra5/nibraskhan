@@ -77,6 +77,16 @@ body
 	display: none;
 	transform: translate(-1.5%);
 }
+.mob_show
+{
+	display: none;
+	font-size: 18px;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-size: 15px;
+	bottom: 20px;
+}
+
 /*-------------top nav E----------*/
 /*----------social btns S-----------*/
 .cont_social
@@ -494,13 +504,38 @@ body
 }
 @media (max-width: 700px)
 {
-	.logo{width: 55px; margin: 0px 15px;}
-	.navTab{font-size: 12px; margin: 0px 15px;}
+	.logo{margin: 0px 8px;}
+	.mobile_nav 
+	{
+	    transform: translate(-0.5%);
+	}
+	.mob_show{display: inline-block;}
+	.navTab
+	{
+		display: none;
+		/*font-size: 12px; 
+		margin: 0px 15px;
+		bottom: 15px;
+		padding: 18px 0px;*/
+	}
+	.resume{display: none;}
+	.scroll_btn{display: none;}
+	.dp{/*width: 100px*/}
 
 	.name{font-size: 15px}
 	.typeWriter{font-size: 15px; margin-top: 0px}
 	.ser_contents{padding: 20px}
 	.resume{font-size: 14px; right: -38px}
+
+	.socialLink{display: inline;}
+	.social_reach{display: none;}
+	.cont_social
+	{
+		position: absolute;
+		top: 90%;
+		transform: translate(-33%,0%);
+		left: 40%;
+	}
 
 	.ser_header{font-size: 12px}
 	.ser_para{font-size: 8px; margin-top: -15px; max-width: 170px;}
