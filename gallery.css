@@ -53,13 +53,14 @@ body
 	display: none;
 	position: fixed;
 	background-color: #F6F6F6;
-	width: 80px;
+	width: 50px;
 	height: 100vh;
 	color: #A0A0A0;
 }
 .stripe_menu
 {
-	padding: 26px;
+	width: 40%;
+	padding: 15px;
 }
 .stripe_head
 {
@@ -67,8 +68,10 @@ body
 	display: block ruby;
 	transform: rotate(-90deg);
 	top: 45%;
-	left: -90px;
-	font-size: 30px;
+	left: -78px;
+	font-size: 20px;
+	width: 400%;
+	text-align: center;
 }
 
 /*-----------left nav E------------*/
@@ -157,6 +160,21 @@ body
 		margin: 8px 10px 18px 10px;
 		padding-bottom: 10px;
 	}
+}
+@media (max-width: 700px)
+{
+	.gallery{margin-left: 50px;}
+	.gal_img
+	{
+		max-width: 42%;
+		margin:5px 5px 10px 5px;
+		filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.2));
+	}
+	.gal_img:hover
+	{
+		padding-bottom: 5px;
+		margin: 0px 5px 10px 5px;
+	}
 
 }
 /*-----------Gallery E------------*/
@@ -210,4 +228,30 @@ body
 {
 	margin-top: 20px;
 	font-weight: 400;
+}
+
+@media (max-width: 700px)
+{
+	/*-------Footer S------*/
+
+	.f_link
+	{
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		color: #A9A9A9;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.cont_f_links
+	{
+		margin-top: 10px;
+	}
+	.cont_f_social
+	{
+		margin-top: 40px;
+	}
 }
