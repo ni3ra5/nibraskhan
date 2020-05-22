@@ -60,7 +60,7 @@ body
 {
 	bottom: 30px;
 	padding: 25px 0px 35px 0px;
-	color: #5629C3;
+	color: #442D9E;
 }
 .cont_NavTabs a
 {
@@ -157,7 +157,7 @@ body
 	padding: 10px 20px 32px 20px;
 	font-size: 25px;
 	right: -60px;
-	color: #5629C3; 
+	color: #442D9E; 
 }
 /*----------resume E-----------*/
 /*----------scroll S-----------*/
@@ -421,7 +421,7 @@ body
 	position: relative;
 	background-color: #1a1a1a;
 	text-align: center;
-	border-top: 5px solid #6C55D4;
+	border-top: 5px solid #442D9E;
 	margin-top: 40px;
 	font-family: 'Poppins', sans-serif;
 	font-size: 12px;
@@ -490,7 +490,7 @@ body
 	{
 		bottom: 20px;
 		padding: 25px 0px 25px 0px;
-		color: #5629C3;
+		color: #442D9E;
 	}
 }
 @media (max-width: 960px)
@@ -654,10 +654,6 @@ body
 	.cont_f_links
 	{
 		margin-top: 10px;
-	}
-	.cont_f_social
-	{
-		margin-top: 40px;
 	}
 
 }

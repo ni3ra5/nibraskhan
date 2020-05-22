@@ -1,0 +1,101 @@
+<!-- --------------------FOOTER STARTS-------------------- -->
+<div class="footer">
+	<div class="footerContents">
+		<a href="index.html"><img class="footer_logo" src="skins/logo.png"></a><br>
+		<div class="cont_f_links">
+			<a class="f_link" href="gallery_web.html">WEB DESIGNS</a>
+			<a class="f_link" href="gallery_app.html">APPLICATION UI</a>
+			<a class="f_link" href="gallery_dev.html">WEB DEVELOPMENT</a>
+			<a class="f_link" href="gallery_logo.html">LOGO DESIGNS</a>
+			<a class="f_link" href="gallery_pic.html">SKETCHES & EDITS</a>
+			<!-- <a class="f_link" href="">ANIMATIONS</a> -->
+		</div>
+		<div class="cont_f_social">
+			<a class="f_social" href=""><img src="skins/ffb.png"></a>
+			<a class="f_social" href=""><img src="skins/fin.png"></a>
+			<a class="f_social" href=""><img src="skins/fig.png"></a>
+		</div>
+		<p class="rightsReserved">Nibras Khan 2020. All rights reserved.</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+/*-----------------footer-----------------*/
+.footer
+{
+	position: relative;
+	background-color: #1a1a1a;
+	text-align: center;
+	border-top: 5px solid #6C55D4;
+	margin-top: 40px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	color: #A9A9A9;
+	z-index: 10;
+}
+.footerContents
+{
+	padding: 60px;
+}
+.footer_logo
+{
+	width: 70px;
+}
+.f_link
+{
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	color: #A9A9A9;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.cont_f_links
+{
+	margin-top: 20px;
+}
+.cont_f_social
+{
+	margin-top: 30px;
+}
+.f_social
+{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.rightsReserved
+{
+	margin-top: 20px;
+	font-weight: 400;
+}
+
+@media (max-width: 700px)
+{
+	.f_link
+	{
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		color: #A9A9A9;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.cont_f_links
+	{
+		margin-top: 10px;
+	}
+	.cont_f_social
+	{
+		margin-top: 40px;
+	}
+
+}
