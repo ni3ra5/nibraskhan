@@ -8,18 +8,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 <!-- ---fonts E--- -->
 <link rel="stylesheet" type="text/css" href="gallery.css">
-<script src="myFunctions.js"></script>
+<script src="functions.js"></script>
 </head>
 
 <body>
 
+	<p onclick="ExitView()" id="back">< Back</p>
+	<div onclick="ExitView()" id="view_bg"></div>
+	<img id="view_img" src="">
+
+
+<div id="whole_screen">
 	<!-- ---mobile left stripe--- -->
 		<div class="mob_stripe"> 
-			<img class="stripe_menu" src="skins/menu.png">
+			<img onclick="menuExpand()" class="stripe_menu" src="skins/menu.svg">
 			<p class="stripe_head">Website Designs</p>
 		</div>
-
-	<div class="left_nav">
+	<!-- ---left nav---	 -->
+	<div onclick="ExitMenu()" id="menu_blackBG"></div>
+	<div class="left_nav" id="left_nav">
 		<div class="nav_contents">
 
 			<a href="index.html" class="logo">
@@ -75,16 +82,16 @@
 	<div class="gal_contents">
 
 		<p class="gal_header">Website Designs</p>
-		<img class="gal_img" src="skins\gallery\web/1.png">
-		<img class="gal_img" src="skins\gallery\web/2.png">
-		<img class="gal_img" src="skins\gallery\web/3.png">
-		<img class="gal_img" src="skins\gallery\web/4.png">
-		<img class="gal_img" src="skins\gallery\web/5.png">
-		<img class="gal_img" src="skins\gallery\web/6.png">
-		<img class="gal_img" src="skins\gallery\web/7.png">
-		<img class="gal_img" src="skins\gallery\web/8.png">
-		<img class="gal_img" src="skins\gallery\web/9.png">
-		<img class="gal_img" src="skins\gallery\web/10.png">
+		<img onclick="view(1)" class="gal_img" src="skins\gallery\web/1.png">
+		<img onclick="view(2)" class="gal_img" src="skins\gallery\web/2.png">
+		<img onclick="view(3)" class="gal_img" src="skins\gallery\web/3.png">
+		<img onclick="view(4)" class="gal_img" src="skins\gallery\web/4.png">
+		<img onclick="view(5)" class="gal_img" src="skins\gallery\web/5.png">
+		<img onclick="view(6)" class="gal_img" src="skins\gallery\web/6.png">
+		<img onclick="view(7)" class="gal_img" src="skins\gallery\web/7.png">
+		<img onclick="view(8)" class="gal_img" src="skins\gallery\web/8.png">
+		<img onclick="view(9)" class="gal_img" src="skins\gallery\web/9.png">
+		<img onclick="view(10)" class="gal_img" src="skins\gallery\web/10.png">
 	</div>
 	
 </section>
@@ -93,14 +100,6 @@
 <div class="footer">
 	<div class="footerContents">
 		<a href="index.html"><img class="footer_logo" src="skins/logo.png"></a><br>
-		<div class="cont_f_links">
-			<a class="f_link" href="gallery_web.html">WEB DESIGNS</a>
-			<a class="f_link" href="gallery_app.html">APPLICATION UI</a>
-			<a class="f_link" href="gallery_dev.html">WEB DEVELOPMENT</a>
-			<a class="f_link" href="gallery_logo.html">LOGO DESIGNS</a>
-			<a class="f_link" href="gallery_pic.html">SKETCHES & EDITS</a>
-			<!-- <a class="f_link" href="">ANIMATIONS</a> -->
-		</div>
 		<div class="cont_f_social">
 			<a class="f_social" href=""><img src="skins/ffb.png"></a>
 			<a class="f_social" href=""><img src="skins/fin.png"></a>
@@ -110,6 +109,7 @@
 	</div>
 </div>
 
+</div> <!-- id=gallery ENDS -->
 
 </body>
 </html>
