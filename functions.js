@@ -5,19 +5,21 @@ function view(n)
 	var view_img = document.getElementById("view_img");
 	var view_bg = document.getElementById("view_bg");
 	var screen = document.getElementById("whole_screen");
-	var back = document.getElementById("back");
+	var cross = document.getElementById("cross");
 	var loader = document.getElementById("loader");
 
 	view_img.src="skins/gallery/web/"+n+"a.png";
 
 	view_bg.style.display="block";
 	screen.style.position='fixed';
-	back.style.display="block";
+	cross.style.display="block"; 
 	loader.style.display="block";
 	view_img.style.display="block";
 
 	var start = document.getElementById("whole_screen");
 	start.scrollIntoView();
+
+	// history.pushState(null,null,'gallery_web.html#whole_screen');
 }
 
 function ExitView()
@@ -30,7 +32,7 @@ function ExitView()
 	view_img.src="";
 	view_bg.style.display="none";
 	screen.style.position="static";
-	back.style.display="none";
+	cross.style.display="none";
 	loader.style.display="none";
 	view_img.style.display="none";
 
@@ -53,8 +55,9 @@ function ExitMenu()
 	var blackBG = document.getElementById("menu_blackBG");
 	var left_nav = document.getElementById("left_nav");
 
-	blackBG.style.visibility="hidden";
+	
 	blackBG.style.opacity="0";
 	left_nav.style.left = "-250px";
+	blackBG.style.visibility="hidden";
 	
 }
