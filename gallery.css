@@ -190,7 +190,6 @@ body
 {
 	position: absolute;
 	display: none;
-	width: 100px;
 	z-index: 100;
 	left: 50%;
 	top: 50%;
