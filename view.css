@@ -1,0 +1,44 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+body
+{
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: #212121;
+}
+
+#loader
+{
+	position: absolute;
+	width: 100px;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#view_img
+{
+	position: relative;
+	display: none;
+	z-index: 2;
+	max-width: 90vw;
+	border-radius: 10px;
+	left: 50%;
+	transform: translate(-50%);
+	/*top: 20px;*/
+	/*margin-bottom: 20px;*/
+}
+.close
+{
+	display: block;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	color: #626262;
+	text-decoration: none;
+}
+

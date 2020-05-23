@@ -7,12 +7,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 <!-- ---fonts E--- -->
-<link rel="stylesheet" type="text/css" href="gallery.css">
+<link rel="stylesheet" type="text/css" href="view.css">
 <script src="functions.js"></script>
 </head>
-<body onload="view()">
+<body onload="retrive()">
 
+	<img id="loader" src="skins/load.gif">
+	
+	<a class="close" href="javascript:history.back()">BACK</a>
 	<img id="view_img" src="">
+	<a class="close" href="javascript:history.back()">BACK</a>
 
+	<script>
+		function retrive()
+		{
+			var ind = localStorage.getItem("picIndex");
+			// alert("The Value Received is " + ind);
+
+			var view_img = document.getElementById("view_img");
+			view_img.src="skins/gallery/web/"+ind+".png";
+			view_img.style.display="block";
+
+
+			// var resetValue =0;
+			// localStorage.setItem("picIndex", resetValue);
+		}
+	</script>
 </body>
 </html>

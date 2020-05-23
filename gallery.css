@@ -124,7 +124,7 @@ body
 	position: absolute;
 	display: none;
 	z-index: 101;
-	max-width: 80vw;
+	max-width: 70vw;
 	border-radius: 10px;
 	left: 50%;
 	transform: translate(-50%);
@@ -254,11 +254,6 @@ body
 	{
 		padding-bottom: 5px;
 		margin: 0px 5px 10px 5px;
-	}
-
-	#view_img
-	{
-		max-width: 85vw;
 	}
 
 }

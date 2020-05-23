@@ -1,6 +1,19 @@
-
+var x = window.matchMedia("(max-width: 700px)");
+var ind;
 
 function view(n)
+{
+	if(x.matches)
+	{
+		mobile_view(n);
+	}
+	else
+	{
+		desktop_view(n);
+	}
+}
+
+function desktop_view(n)
 {
 	var view_img = document.getElementById("view_img");
 	var view_bg = document.getElementById("view_bg");
@@ -12,14 +25,18 @@ function view(n)
 
 	view_bg.style.display="block";
 	screen.style.position='fixed';
-	cross.style.display="block"; 
 	loader.style.display="block";
 	view_img.style.display="block";
 
 	var start = document.getElementById("whole_screen");
 	start.scrollIntoView();
+}
 
-	// history.pushState(null,null,'gallery_web.html#whole_screen');
+function mobile_view(n)
+{
+	ind=n;
+	localStorage.setItem("picIndex", ind);
+	window.location.href="view.html";
 }
 
 function ExitView()
