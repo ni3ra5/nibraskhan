@@ -189,6 +189,7 @@ body
 #loader
 {
 	position: absolute;
+	width: 60px;
 	display: none;
 	z-index: 100;
 	left: 50%;
