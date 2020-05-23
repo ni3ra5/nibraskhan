@@ -1,6 +1,12 @@
 var x = window.matchMedia("(max-width: 700px)");
 var ind;
 
+function preloader()
+{
+	var loader = document.getElementById('startLoad');
+	loader.style.display='none';
+}
+
 function view(n)
 {
 	if(x.matches)
@@ -21,7 +27,7 @@ function desktop_view(n)
 	var cross = document.getElementById("cross");
 	var loader = document.getElementById("loader");
 
-	view_img.src="skins/gallery/web/"+n+"a.png";
+	view_img.src="skins/gallery/web/"+n+".png";
 
 	view_bg.style.display="block";
 	screen.style.position='fixed';
@@ -72,9 +78,7 @@ function ExitMenu()
 	var blackBG = document.getElementById("menu_blackBG");
 	var left_nav = document.getElementById("left_nav");
 
-	
 	blackBG.style.opacity="0";
 	left_nav.style.left = "-250px";
 	blackBG.style.visibility="hidden";
-	
 }

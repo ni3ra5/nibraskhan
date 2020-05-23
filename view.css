@@ -7,17 +7,15 @@ body
 {
 	max-width: 100%;
 	overflow-x: hidden;
-	background-color: #212121;
 }
 
-#loader
+#startLoad
 {
-	position: absolute;
-	width: 100px;
-	z-index: 1;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
+	position: fixed;
+	width: 100vw;
+	height: 100%;
+	z-index: -1;
+	background:#212121 url(skins/white.gif) no-repeat center;
 }
 #view_img
 {
@@ -40,5 +38,6 @@ body
 	font-size: 25px;
 	color: #626262;
 	text-decoration: none;
+	z-index: 3;
 }
 

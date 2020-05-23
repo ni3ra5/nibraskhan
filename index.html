@@ -9,55 +9,21 @@
 <!-- ---fonts E--- -->
 <link rel="stylesheet" type="text/css" href="myStyle.css">
 <script src="typewriter.js"></script>
+<script src="functions.js"></script>
 </head>
 
-<body onload="typefunction()">
+<body onload="preloader(); typefunction()">
+
+<div id="startLoad"></div> <!-- loader -->
 <section id="landScreen">
+
 	<!-- ----------------top nav STARTS------------- -->
 		<!-- pc nav -->
 		<div class="topnav pc_nav">
 			<div class="cont_NavTabs">
 				<a href="gallery_web.html" class="navTab">Website Designs</a>
 				<a href="gallery_app.html" class="navTab">Application UI</a>
-			<a href="index.html" class="logo">
-
-				<?xml version="1.0" encoding="utf-8"?>
-				<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-					 viewBox="0 0 69.54 59.6" style="enable-background:new 0 0 69.54 59.6;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:#212121;}
-					.st1{fill:#212121;}
-					.st2{fill:#442D9E;}
-					.st3{fill:#442D9E;}
-					#st4{opacity:0;fill:#fff;}
-				</style>
-				<g id="Layer_1">
-					<g id="default">
-						<polygon class="st0" points="8.18,47.73 16.35,59.6 0,59.6 		"/>
-						<polygon class="st0" points="61.37,11.87 69.54,0 53.19,0 		"/>
-						<polygon id="_x35_-" class="st0" points="69.54,27.16 69.54,59.6 36.84,59.6 40.38,54.39 40.38,54.31 65.14,54.31 65.14,32.44 
-							37.08,32.44 37.08,32.41 36.84,32.41 36.84,0 45.67,0 42.13,5.21 42.13,27.16 		"/>
-						<polygon id="_x33_-" class="st0" points="32.7,0 32.7,59.6 23.94,59.6 27.47,54.4 27.47,32.41 17.75,32.41 17.75,32.42 
-							14.22,32.42 10.64,27.18 27.47,27.18 27.47,5.23 3.54,5.23 0,0 		"/>
-					</g>
-					
-				</g>
-				<g id="logoBlock">
-					<rect y="0" id="st4" width="69.54" height="59.6"/>
-				</g>
-
-				<g id="logoHover">
-				<polygon class="st1" points="8.18,47.73 16.35,59.6 0,59.6 		"/>
-				<polygon class="st1" points="61.37,11.87 69.54,0 53.19,0 		"/>
-				
-				<polygon id="_x35_" class="st2" points="69.54,27.16 69.54,59.6 36.84,59.6 40.38,54.39 40.38,54.31 65.14,54.31 65.14,32.44 
-					37.08,32.44 37.08,32.41 36.84,32.41 36.84,0 45.67,0 42.13,5.21 42.13,27.16 		"/>
-				
-				<polygon id="_x33_" class="st3" points="32.7,0 32.7,59.6 23.94,59.6 27.47,54.4 27.47,32.41 17.75,32.41 17.75,32.42 
-				14.22,32.42 10.64,27.18 27.47,27.18 27.47,5.23 3.54,5.23 0,0 		"/>
-				</g>
-				</svg>
+			<a href="index.html" class="logo"><img src="skins/logo.svg">
 			</a>
 				<a href="gallery_dev.html" class="navTab">Web Development</a>
 				<a href="gallery_logo.html" class="navTab">Logo Designs</a>
@@ -68,31 +34,7 @@
 			<div class="cont_NavTabs">
 				<a href="#portfolio" class="mob_show">Portfolio</a>
 				<a href="gallery_web.html" class="navTab">Website Designs</a>
-			<a href="index.html" class="logo">
-
-				<?xml version="1.0" encoding="utf-8"?>
-				<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-					 viewBox="0 0 69.54 59.6" style="enable-background:new 0 0 69.54 59.6;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:#212121;}
-					.st1{fill:#212121;}
-					.st2{fill:#442D9E;}
-					.st3{fill:#442D9E;}
-					#st4{opacity:0;fill:#fff;}
-				</style>
-				<g id="Layer_1">
-					<g id="default">
-						<polygon class="st0" points="8.18,47.73 16.35,59.6 0,59.6 		"/>
-						<polygon class="st0" points="61.37,11.87 69.54,0 53.19,0 		"/>
-						<polygon id="_x35_-" class="st2" points="69.54,27.16 69.54,59.6 36.84,59.6 40.38,54.39 40.38,54.31 65.14,54.31 65.14,32.44 
-							37.08,32.44 37.08,32.41 36.84,32.41 36.84,0 45.67,0 42.13,5.21 42.13,27.16 		"/>
-						<polygon id="_x33_-" class="st3" points="32.7,0 32.7,59.6 23.94,59.6 27.47,54.4 27.47,32.41 17.75,32.41 17.75,32.42 
-							14.22,32.42 10.64,27.18 27.47,27.18 27.47,5.23 3.54,5.23 0,0 		"/>
-					</g>
-					
-				</g>
-				</svg>
+			<a href="index.html" class="logo"><img src="skins/logo.svg">
 			</a>
 				<a href="" class="mob_show">Resume</a>
 				<a href="gallery_app.html" class="navTab">Application UI</a><br>
@@ -131,7 +73,7 @@
 <section id="portfolio">
 	<div class="n35">NI3RA5</div>
 	<div class="container">
-		<p style="padding-top: 80px;color: #CBCBCB" class="header1">Portfolio</p>
+		<p class="portfolioHead">Portfolio</p>
 
 		<div class="cont_service">
 

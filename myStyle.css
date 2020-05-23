@@ -16,6 +16,14 @@ body
 	max-width: 100%;
 	overflow-x: hidden;
 }
+#startLoad
+{
+	position: fixed;
+	width: 100vw;
+	height: 100%;
+	z-index: 10;
+	background:#fff url(skins/blue.gif) no-repeat center;
+}
  
 #landScreen
 {
@@ -31,7 +39,7 @@ body
 .topnav
 {
 	padding-top: 20px;
-	transform: translate(0.5%);
+	transform: translate(0.6%);
 }
 .logo
 {
@@ -204,10 +212,12 @@ body
 	margin-left: auto;
 	margin-right: auto;
 }
-.header1
+.portfolioHead
 {
 	text-align: center;
 	font-size: 40px;
+	padding-top: 80px;
+	color: #CBCBCB;
 }
 
 /*----------service S-----------*/
@@ -542,23 +552,35 @@ body
 		left: 40%;
 	}
 	.socialLink:hover{padding: 10px;}
-	.header1{font-size: 30px;}
+	.portfolioHead
+	{
+		font-size: 30px;
+		padding-top: 20px;
+	}
 
 	.ser_header{font-size: 12px; margin-top: 5px;}
 	.ser_para{font-size: 8px; margin-top: -10px; max-width: 170px;}
-	.service{height: 100px}
+	.service
+	{
+		height: 100px;
+		margin-top: 5px;
+		transition: all ease-in-out 100ms;
+		left: 50%;
+		transform: translate(-50%);
+		width: 97%;
+	}
 	.right_alg{right: 20px}
 
 	/*-------services S------*/
 
-	#elements_web{right: 155px; top: 18%}
+	#elements_web{right: 165px; top: 18%}
 	#web1,#web2,#web3{width: 120px;}
 	#web #web1{top: -23px; left: 42px; width: 120px;}
 	#web #web2{opacity: 100%; top: 15px; width: 120px;}
 	#web #web3{display: none;}
 	#web #header_web{font-size: 13px;}
 
-	#web:hover #elements_web{right: 155px; top: 18%}
+	#web:hover #elements_web{right: 165px; top: 18%}
 	#web:hover #web1{top: -23px; left: 42px; width: 120px;}
 	#web:hover #web2{opacity: 100%; top: 15px; width: 120px;}
 	#web:hover #web3{display: none;}
@@ -608,14 +630,14 @@ body
 
 /*------*/
 
-	#elements_pic{right: 155px; top: 18%}
+	#elements_pic{right: 165px; top: 18%}
 	#pic1,#pic2,#pic3{width: 120px;}
 	#pic1{top: -23px; left: 42px; width: 120px;}
 	#pic2{opacity: 100%; top: 15px; width: 120px;}
 	#pic3{display: none;}
 	#header_pic{font-size: 13px;}
 
-	#pic:hover #elements_pic{right: 155px; top: 18%}
+	#pic:hover #elements_pic{right: 165px; top: 18%}
 	#pic:hover #pic1{top: -23px; left: 42px; width: 120px;}
 	#pic:hover #pic2{opacity: 100%; top: 15px; width: 120px;}
 	#pic:hover #pic3{display: none;}
@@ -635,7 +657,7 @@ body
 	#ani:hover #header_ani {font-size: 13px;}
 	#ani:hover #ani1 {transform: rotate(0deg);}
 	#ani:hover #ani2 {transform: rotate(0deg);}
-	/*-------services S------*/
+	/*-------services E------*/
 
 	/*-------Footer S------*/
 
