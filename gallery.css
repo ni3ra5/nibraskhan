@@ -192,12 +192,13 @@ body
 {
 	display: inline-block;
 	cursor: pointer;
-	margin: 20px 20px 18px 20px;
-	width: 16%;
+	margin: 20px 45px 18px 45px;
+	max-width: 14%;
 	text-align: center;
 }
 .gal_img_app
 {
+	max-width: 100%;
 	margin-top: 8px;
 	margin-bottom: 5px;
 	transition: all ease-in-out 50ms;
@@ -238,8 +239,11 @@ body
 	font-family: 'Poppins', sans-serif;
 	font-weight: 800;
 	font-size: 14px;
+	margin-top: 10px;
+	max-width: 100%;
+	/*text-overflow: ellipsis;*/
 }
-
+.AppDN{max-width: 98%;}
 #loader
 {
 	position: absolute;
@@ -250,12 +254,6 @@ body
 	top: 50%;
 	transform: translate(-50%,-50%);
 }
-/*.row
-{
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}*/
 
 @media (max-width: 1600px)
 {
@@ -266,7 +264,11 @@ body
 		margin: 8px 22px 18px 22px;
 		padding-bottom: 10px;
 	}
-	.app_cont{width: 16%;}
+	.app_cont
+	{
+		max-width: 16%;
+		margin: 20px 40px 18px 40px;
+	}
 	.dev_cont
 	{
 		max-width: 20%;
@@ -283,7 +285,11 @@ body
 		margin: 8px 10px 18px 10px;
 		padding-bottom: 10px;
 	}
-	.app_cont{width: 19%;}
+	.app_cont
+	{
+		max-width: 18%;
+		margin: 20px 45px 18px 45px;
+	}
 	.dev_cont
 	{
 		max-width: 22%;
@@ -294,7 +300,10 @@ body
 {
 	.gal_contents{margin-left: 30px}
 	.gal_img_web{max-width: 29%; margin: 18px 10px 18px 10px;}
-	.app_cont{width: 26%;}
+	.app_cont
+	{
+		max-width: 18%;
+	}
 	.dev_cont
 	{
 		max-width: 29%;
@@ -316,6 +325,7 @@ body
 		margin: 8px 10px 18px 10px;
 		padding-bottom: 10px;
 	}
+
 	.dev_cont
 	{
 		max-width: 45%;
@@ -350,8 +360,17 @@ body
 		margin:5px 5px 10px 5px;
 		filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.2));
 	}
-
-	.app_cont{width: 35%;}
+	.displayName
+	{
+		font-size: 12px;
+		margin-top: 0px;
+		font-weight: 500;
+	}
+	.app_cont
+	{
+		max-width: 38%;
+		margin: 0px 8px 0px 8px;
+	}
 	.app_cont:hover .gal_img_app
 	{
 		padding-bottom: 0px;
