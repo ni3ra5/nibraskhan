@@ -25,10 +25,11 @@
 		function retrive()
 		{
 			var ind = localStorage.getItem("picIndex");
+			var type = localStorage.getItem("fileType");
 			// alert("The Value Received is " + ind);
 
 			var view_img = document.getElementById("view_img");
-			view_img.src="skins/gallery/web/"+ind+".png";
+			view_img.src="skins/gallery/"+type+"/"+ind+".png";
 			view_img.style.display="block";
 
 

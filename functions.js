@@ -1,5 +1,6 @@
 var x = window.matchMedia("(max-width: 700px)");
 var ind;
+var type;
 
 function preloader()
 {
@@ -7,19 +8,19 @@ function preloader()
 	loader.style.display='none';
 }
 
-function view(n)
+function view(n,type)
 {
 	if(x.matches)
 	{
-		mobile_view(n);
+		mobile_view(n,type);
 	}
 	else
 	{
-		desktop_view(n);
+		desktop_view(n,type);
 	}
 }
 
-function desktop_view(n)
+function desktop_view(n,type)
 {
 	var view_img = document.getElementById("view_img");
 	var view_bg = document.getElementById("view_bg");
@@ -27,21 +28,22 @@ function desktop_view(n)
 	var cross = document.getElementById("cross");
 	var loader = document.getElementById("loader");
 
-	view_img.src="skins/gallery/web/"+n+".png";
+	view_img.src="skins/gallery/"+type+"/"+n+".png";
 
 	view_bg.style.display="block";
 	screen.style.position='fixed';
 	loader.style.display="block";
 	view_img.style.display="block";
 
-	var start = document.getElementById("whole_screen");
+	var start = document.getElementById("view_img");
 	start.scrollIntoView();
 }
 
-function mobile_view(n)
+function mobile_view(n,type)
 {
 	ind=n;
 	localStorage.setItem("picIndex", ind);
+	localStorage.setItem("fileType", type);
 	window.location.href="view.html";
 }
 
