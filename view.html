@@ -14,7 +14,7 @@
 
 	<div id="startLoad"></div>
 	
-	<a class="back" href="javascript:history.back()">BACK</a>
+	<!-- <a class="back" href="javascript:history.back()">BACK</a> -->
 	<img id="view_img" src="">
 	<a class="back" href="javascript:history.back()">BACK</a>
 
@@ -29,6 +29,18 @@
 			// alert("The Value Received is " + ind);
 
 			var view_img = document.getElementById("view_img");
+			var back = document.getElementsByClassName("back");
+			if(type=="logo")
+				{
+					view_img.style.maxWidth = "70vw";
+					view_img.style.top = "50%";
+					view_img.style.transform = "translate(-50%,70%)";
+
+					back[0].style.position="absolute";
+					back[0].style.bottom="0px";
+					back[0].style.width="100%";
+				}
+
 			view_img.src="skins/gallery/"+type+"/"+ind+".png";
 			view_img.style.display="block";
 
