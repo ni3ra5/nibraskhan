@@ -21,13 +21,25 @@ body
 #view_img
 {
 	position: relative;
-	/*top: 0%;*/
 	display: none;
 	z-index: 2;
 	max-width: 90vw;
 	border-radius: 10px;
 	left: 50%;
 	transform: translate(-50%);
+	/*top: 20px;*/
+	/*margin-bottom: 20px;*/
+}
+#view_img_logo
+{
+	position: absolute;
+	display: none;
+	z-index: 2;
+	max-width: 70vw;
+	border-radius: 10px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 	/*top: 20px;*/
 	/*margin-bottom: 20px;*/
 }
