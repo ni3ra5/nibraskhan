@@ -32,6 +32,8 @@ function desktop_view(n,type)
 
 	if(type=="logo")
 		{view_img.style.maxWidth = "40vw";}
+	if(type=="pic")
+		{view_img.style.maxHeight = "80vh";}
 
 	view_bg.style.display="block";
 	screen.style.position='fixed';
@@ -44,10 +46,6 @@ function desktop_view(n,type)
 
 function mobile_view(n,type)
 {
-	var view_img = document.getElementById("view_img");
-	if(type=="logo")
-		{view_img.style.maxWidth = "50vw";}
-
 	ind=n;
 	localStorage.setItem("picIndex", ind);
 	localStorage.setItem("fileType", type);
