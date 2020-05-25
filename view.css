@@ -7,13 +7,14 @@ body
 {
 	max-width: 100%;
 	overflow-x: hidden;
+	background-color: #212121;
 }
 
 #startLoad
 {
 	position: fixed;
 	width: 100vw;
-	height: 120%;
+	height: 100%;
 	z-index: -1;
 	background:#212121 url(skins/white.gif) no-repeat center;
 }
