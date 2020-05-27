@@ -351,7 +351,7 @@ body
 }
 #app1{top: 0px; width: 90px; left: -5px}
 #app2{top: 10px; left: 60px; width: 80px; opacity: 100%}
-#app3{top: 10px; left: -50px; width: 80px; opacity: 100%}
+#app3{top: 10px; left: -60px; width: 80px; opacity: 100%}
 
 #app:hover #elements_app{left: 145px;}
 #app:hover #app1{width: 110px; top: -20px; left: -5px}
@@ -642,14 +642,14 @@ body
 	#elements_app{top: 12%; left: 50px}
 	
 	#app1{top: -7px; width: 45px; left: -5px}
-	#app2{top: 5px; left: 35px; width: 35px; opacity: 100%}
-	#app3{top: 5px; left: -29px; width: 35px; opacity: 100%}
+	#app2{top: 5px; left: 30px; width: 35px; opacity: 100%}
+	#app3{top: 5px; left: -30px; width: 35px; opacity: 100%}
 	#app #header_app{font-size: 13px;}
 
 	#app:hover #elements_app{top: 12%; left: 50px}
 	#app:hover #app1{width: 45px; top: -7px; left: -5px}
-	#app:hover #app2{opacity: 100%; left: 35px;}
-	#app:hover #app3{opacity: 100%; left: -29px;}
+	#app:hover #app2{opacity: 100%; left: 30px;}
+	#app:hover #app3{opacity: 100%; left: -30px;}
 	#app:hover #header_app{font-size: 13px;}
 
 /*------*/
