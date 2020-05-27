@@ -32,7 +32,7 @@ function desktop_view(n,type)
 
 	if(type=="logo")
 		{view_img.style.maxWidth = "40vw";}
-	if(type=="pic")
+	if(type=="pic" || type=="app")
 		{view_img.style.maxHeight = "80vh";}
 
 	view_bg.style.display="block";
