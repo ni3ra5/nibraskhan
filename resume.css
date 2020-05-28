@@ -1,0 +1,186 @@
+.topnav{position: absolute; width: 100%}
+.box
+{
+	margin-top: 20px;
+	padding:40px;
+	border-top: 4px solid #212121;
+	background-color: white;
+	filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.16));
+}
+.gridLeft
+{
+	grid-area: LG;
+	margin-right: 12px;
+}
+.gridRight
+{
+	grid-area: RG;
+	margin-left: 12px;
+}
+.gridHead
+{
+	grid-area: HD;
+	color: white;
+	padding:40px;
+	background-color: #212121;
+	filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.16));
+}
+.fullResume
+{
+	display: grid;
+	position: relative;
+	grid-template-areas: 
+	'HD HD HD HD'
+	'LG LG LG RG';
+	width: 100%;
+	margin-top: 100px;
+}
+.header1
+{
+	display: block;
+	font-family: 'Aleo', serif;
+	font-size: 30px;
+}
+.header2
+{
+	display: block;
+	font-family: 'Aleo', serif;
+	font-size: 20px;
+	color: #268CB5;
+}
+.instName
+{
+	font-family: 'Aleo', serif;
+	font-size: 20px;
+}
+.desc
+{
+	margin-top: 5px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+}
+.button1
+{
+	cursor: pointer;
+	right: 0px; bottom: 0px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: #212121;
+	position: absolute;
+	border-radius: 3px;
+	font-size: 12px;
+	background-color: white;
+	padding: 10px 20px;
+	margin: 40px;
+}
+.ul
+{
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+.ul li
+{
+	/*margin-top: 5px;*/
+}
+
+/*----------------------------------------------------*/
+@media (max-width: 1120px)
+{
+	.cont_social{display: none;}
+}
+@media (max-width: 1000px)
+{
+	.gridHead
+	{
+		margin: 0px 20px;
+	}
+	.gridLeft
+	{
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+	.gridRight
+	{
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+}
+@media (max-width: 970px)
+{
+	.navTab{display: none;}
+	.mob_show{display: inline-block;}
+}
+@media (max-width: 720px)
+{
+	.button1
+	{
+		bottom: auto;
+		top: 0px;
+	}
+}
+@media (max-width: 870px)
+{
+	.fullResume
+	{
+		grid-template-areas: 
+		'HD'
+		'LG'
+		'RG';
+	}
+	.gridRight, .gridLeft
+	{
+		margin:0px;
+	}
+	.box
+	{
+		margin: 20px;
+	}
+}
+
+@media (max-width: 600px)
+{
+	.header1
+	{
+		font-size: 18px;
+	}
+	.header2
+	{
+		font-size: 15px;
+	}
+	.button1
+	{
+		font-size: 10px;
+		padding: 5px 10px;
+		border-radius: 1px;
+		margin: 20px;
+	}
+	.gridHead
+	{
+		padding:20px;
+	}
+	.box
+	{
+		padding:20px;
+	}
+
+	/*.skills, .hobbies
+	{
+		display: inline-block;
+		max-width: 25%;
+	}*/
+	/*.skills{max-height: 150px;}*/
+	/*.hobbies{
+		margin-left: 10px;
+		margin-top: 0px;
+	}*/
+
+
+	.desc{font-size: 10px}
+	.instName{font-size: 15px;}
+	.ul li
+	{
+		font-size: 12px;
+		margin-top: 0px;
+	}
+}

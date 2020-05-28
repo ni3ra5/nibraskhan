@@ -539,6 +539,16 @@ body
 
 @media (max-width: 800px)
 {
+	.skills, .hobbies
+	{
+		max-width: 50px;
+	}
+
+	.footer
+	{
+		margin-left: 51px;
+		border-radius: 5px 5px 0px 0px;
+	}
 	.f_link
 	{
 		display: inline-block;
