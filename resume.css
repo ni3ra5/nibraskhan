@@ -125,8 +125,8 @@
 	{
 		grid-template-areas: 
 		'HD'
-		'LG'
-		'RG';
+		'RG'
+		'LG';
 	}
 	.gridRight, .gridLeft
 	{
