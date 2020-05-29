@@ -748,4 +748,4 @@ a{
  -ms-user-select: none;
   user-select: none;
 
-}
+} /*this css is to avoid blue highlight in chrome*/
