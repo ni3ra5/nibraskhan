@@ -164,20 +164,8 @@
 		padding:20px;
 	}
 
-	/*.skills, .hobbies
-	{
-		display: inline-block;
-		max-width: 25%;
-	}*/
-	/*.skills{max-height: 150px;}*/
-	/*.hobbies{
-		margin-left: 10px;
-		margin-top: 0px;
-	}*/
-
-
 	.desc{font-size: 10px}
-	.instName{font-size: 15px;}
+	.instName{font-size: 12.5px;}
 	.ul li
 	{
 		font-size: 12px;
